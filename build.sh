@@ -11,7 +11,7 @@ mkdir -p "$BIN_DIR"
 
 echo "Compiling Java files..."
 find "$SRC_DIR" -name "*.java" > sources.txt
-javac -d "$BIN_DIR" @sources.txt
+javac -g -d "$BIN_DIR" @sources.txt
 rm sources.txt
 
 echo "Packaging into JAR using your manifest..."
